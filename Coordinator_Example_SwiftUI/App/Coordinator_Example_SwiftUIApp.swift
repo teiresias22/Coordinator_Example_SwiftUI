@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Coordinator_Example_SwiftUIApp: App {
+    @UIApplicationDelegateAdaptor var delegate: AppDelegate
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
